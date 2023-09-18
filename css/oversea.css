@@ -1,0 +1,973 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul, ol{
+    list-style: none;
+}
+img, video, iframe{
+    vertical-align: middle;
+}
+body{
+    font-family: 'SUITE Variable', sans-serif;
+    font-size: 15px;
+    min-width: 1625px;
+}
+
+#main{
+    position: relative;
+}
+#main>img{width: 100%;}
+
+
+
+.top{
+    display: inline-block; 
+    background: url(../images/oversea/up-arrow.png) no-repeat center;
+    background-size: contain;
+    color: #fff;
+    position: fixed;
+    bottom: 31px;
+    right: 47px;
+    width: 96px;
+    height: 70px;
+    z-index: 999;
+}
+/* gnb */
+#gnb{
+    width: 100%;
+    position: absolute;
+    top: 2.5%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid white 2px;
+    padding: 20px 0;
+}
+.gnb_inner{
+    width: 1920px;
+    margin: 0 auto;
+}
+#gnb ul{
+    display: flex;
+}
+#gnb ul li{
+    margin: 0 45px;
+}
+#gnb ul li a{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+#gnb ul li a:hover{
+    color: #2291f2;
+}
+
+#gnb h1{
+    position: absolute;
+    left: 4%;
+    top: 19%;
+}
+
+
+/* icons */
+.icons{
+    position: absolute;
+    right: 4%;
+    top: 30.5%;
+}
+.icons a{
+    width: 34px;
+    height: 35px;
+    display: inline-block;
+    margin: 0 15px;
+    background-repeat: no-repeat;
+}
+.heart{
+    background-image: url(../images/oversea/heart.png);
+}
+.heart:hover{
+    background-image: url(../images/oversea/hover_heart.png);
+}
+
+.login{
+    background-image: url(../images/oversea/enter.png);
+}
+.login:hover{
+    background-image: url(../images/oversea/hover_enter.png);
+}
+
+.home{
+    background-image: url(../images/oversea/home.png);
+}
+.home:hover{
+    background-image: url(../images/oversea/hover_home.png);
+}
+
+
+/* reservation form */
+
+.form{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    border: solid #2291f2 5px;
+    border-radius: 100px;
+    width: 1440px;
+}
+
+
+.elem-group{
+    margin: 20px 50px;
+}
+
+  
+  div.elem-group.inlined {
+    width: 132px;
+    display: inline-block;
+    float: left; 
+  }
+  
+  label {
+    display: block;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 300;
+  }
+  
+  input, select, textarea {
+    border-radius: 2px;
+    border: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'SUITE Variable', sans-serif;
+    width: 100%;
+  }
+  
+  div.elem-group.inlined input {
+    width: 160px;
+    display: inline-block;
+    background-color: transparent;
+  }
+  
+  textarea {
+    height: 250px;
+  }
+  
+  hr {
+    border: 1px dotted #ccc;
+  }
+  
+  button {
+    height: 50px;
+    background: transparent;
+    border: solid #2291f2 3px;
+    color: #2291f2;
+    font-size: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 200px;
+  }
+  
+  button:hover {
+    background-color: #2291f2;
+    color: white;
+  }
+
+  .numm{
+    width: 60px !important;
+  }
+  .numm input{
+    width: 70px!important;
+  }
+
+  .form button{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+  }
+
+  .last_num{
+    margin-right: 235px !important;
+  }
+
+
+
+
+  /* 슬라이드 */
+
+
+    .swiper {
+      width: 1230px;
+      padding: 0 70px !important;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .banner{
+        margin-top: 80px;
+    }
+
+    :root {
+        --swiper-theme-color: #2291f2 !important;
+    }
+
+
+
+
+    /* 아이콘들 */
+    #icons{
+        width: 1230px;
+        margin: 60px auto;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .quick_time{
+        margin-right: 13px;
+    }
+    #icons h2{
+        margin-top: 10px;
+    }
+    .icon_card{
+        width: 160px;
+    }
+
+
+
+
+    @font-face {
+        font-family: 'yg-jalnan';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+h5{
+    font-family: 'yg-jalnan';
+    width: 1320px;
+    margin: 170px auto 50px;
+    font-size: 30px;
+    color: #056cf2;
+}
+
+
+
+
+
+    /* best바다 메뉴 */
+
+    #wrapper{
+        width: 1240px;
+        margin: 0 auto;
+    }
+		/*TAB CSS*/
+
+		ul.tabs {
+			margin: 0;
+			padding: 0;
+			float: left;
+			list-style: none;
+			height: 32px; /*--Set height of tabs--*/
+			width: 100%;
+		}
+		ul.tabs li {
+			float: left;
+            width: 16.3%;
+			margin: 0;
+			line-height: 31px; /*--Vertically aligns the text within the tab--*/
+			border: 3px solid #2291f2;
+			border-left: none;
+			margin-bottom: -1px; /*--Pull the list item down 1px--*/
+			overflow: hidden;
+			position: relative;
+			background: #e0e0e0;
+		}
+		ul.tabs li span {
+			text-decoration: none;
+            text-align: center;
+			color: #000;
+			display: block;
+			font-size: 22px;
+            font-weight: 700;
+            padding: 20px 0;
+			/*--Gives the bevel look with a 1px white border inside the list item--*/
+			outline: none;
+		}
+		ul.tabs li span:hover {
+            background-color: #2291f2 !important;
+            color: white !important;
+            cursor: pointer;
+		}
+		html ul.tabs li.active, html ul.tabs li.active a:hover  {
+			 /*--Makes sure that the active tab does not listen to the hover properties--*/
+			background: #2291f2;
+			/*--Makes the active tab look like it's connected with its content--*/
+		}
+
+		/*Tab Conent CSS*/
+		.tab_container {
+			border-top: none;
+			overflow: hidden;
+			clear: both;
+			float: left; 
+			width: 100%;
+			background: #fff;
+            margin-top: 95px;
+		}
+
+
+        .tab{
+            background-color: white !important;
+        }
+        .active a{
+            background-color: #2291f2 !important;
+            color: white !important;
+        }
+        .left_border{
+            border-left: solid 3px #2291f2;
+        }
+
+
+
+
+
+/* best인기바다 content */
+.sea_box{
+    width: 1230px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.sea_card{
+    width: 360px;
+    position: relative;
+}
+.sea_img{
+    width: 100%;
+    border-radius: 20px;
+    background: url(../images/oversea/best_singapore_1.jpg) no-repeat center;
+    height: 227px;
+    position: relative;
+}
+.sea_heart{
+    position: absolute;
+    top: 8%;
+    right: 5%;
+    z-index: 2;
+}
+.sea_heart_h{
+    position: absolute;
+    top: 8%;
+    right: 5%;
+    opacity: 0;
+    z-index: 2;
+}
+.heart_icon:hover .sea_heart_h{
+    opacity: 1;
+}
+
+.singapore_2{
+    background: url(../images/oversea/best_singapore_2.png)no-repeat center;
+}
+.singapore_3{
+    background: url(../images/oversea/best_singapore_3.jpg)no-repeat center;
+}
+
+.cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+
+.sea_text h2{
+    font-size: 20px;
+    margin: 10px 0 5px;
+}
+.sea_text p{
+    font-size: 18px;
+}
+.sea_text h1{
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.sea_text h1 span{
+    font-weight: 900;
+}
+
+
+/* 더보기 */
+.more h1{
+    display: block;
+    font-size: 20px;
+}
+.more {
+    display: flex;
+    border: solid 3px #056cf2;
+    border-radius: 40px;
+    width: fit-content;
+    margin: 50px auto;
+    padding: 5px 30px;
+}
+
+.more img{
+    height: 100%;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.more:hover{
+    background-color: #056cf2;
+    color: white;
+}
+.hover_arrow{
+    display: none;
+}
+.more:hover .more_arrow{
+    display: none;
+}
+.more:hover .hover_arrow{
+    display: inline-block;
+}
+
+
+/* hotel */
+
+
+#hotel{
+    margin-top: 730px;
+}
+.hotel_box{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hotel_box{
+    width: 100%;
+    height: 1000px; 
+    position: relative;}
+.hotel_box::before{
+    content: "";
+    background: url(../images/oversea/hotel_bg.jpg);
+    background-size: cover;
+    opacity: 0.5;
+    position: absolute;
+    top: -120px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.hotel_title{
+    position: relative;
+}
+
+.hotel_in{
+    position: relative;
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.hotel_card{
+    width: 20%;
+    height: 334px;
+    margin: 20px 50px 30px;
+}
+
+
+
+.hotel_img{
+    width: 100%;
+    height: 51%;
+    background: url(../images/oversea/hotel1.jpg) no-repeat center;
+    border-radius: 20px 20px 0 0;
+    transition: all 0.4s;
+}
+.hotel_text{
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    transition: all 0.4s;
+}
+.hotel_textin{
+    padding: 20px;
+}
+.hotel_textin h1{
+    font-size: 19px;
+    font-weight: 800;
+}
+.hotel_textin h2{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 0 15px;
+}
+.hotel_textin h3{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: right;
+}
+.hotel_textin h3 span{
+    font-size: 27px;
+    font-weight: 800;
+}
+.hotel_textin h4{
+    font-size: 16px;
+    font-weight: 300;
+    text-align: right;
+}
+.hotel_card:hover .hotel_img{
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  .hotel_card:hover .hotel_text{
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  .hotel_card:hover .hotel_img{
+    
+  box-shadow: 0px 0px 30px 0px #5555559d;
+  transform: translateY(-15px);
+  transition: all 0.4s;
+  }
+  
+  .hotel_card:hover .hotel_text{
+    box-shadow: 0px 0px 30px 0px #5555559d;
+    transform: translateY(-15px);
+    transition: all 0.4s;
+  }
+  .hotel_card:hover .star{
+    transform: translateY(-15px);
+    transition: all 0.4s;
+  }
+
+  /* 별점 */
+  .star{
+    position: absolute;
+    top: 46.5%;
+    left: 1.7%;
+    width: 159px;
+    background-color: white;
+    border: #056cf2 solid 1px;
+    border-radius: 40px;
+    display: flex;
+    height: 28px;
+    transition: all 0.4s;
+  }
+  .star_rate{
+    background-color: #056cf2;
+    border-radius: 40px;
+    color: white;
+    width: 40%;
+    padding: 0px 4px;
+  }
+  .star_rate img{
+    margin: 0 0 7px 4px;
+  }
+  .star_rate h5{
+    font-size: 22px;
+    margin-bottom: 36px;
+    color: white;
+    display: contents;
+    font-family: 'SUITE Variable';
+    font-weight: 800;
+  }
+.review p{
+    margin-top: 2px;
+    margin-left: 2px;
+}
+.review p span{
+    font-size: 19px;
+}
+
+
+.hotel_card2{
+    position: relative;
+}
+.star2{
+    position: absolute;
+    left: 8%;
+}
+.star1{
+    top: 23%;
+    left: 8.2%;
+}
+
+.hoi2{
+    background-image: url(../images/oversea/hotel2.jpg);
+}
+.hoi3{
+    background-image: url(../images/oversea/hotel3.jpg);
+}
+.hoi4{
+    background-image: url(../images/oversea/hotel4.jpg);
+}
+.hoi5{
+    background-image: url(../images/oversea/hotel5.jpg);
+}
+.hoi6{
+    background-image: url(../images/oversea/hotel6.jpg);
+}
+
+.more2{
+    position: relative;
+}
+
+
+
+
+
+/* cruise */
+#cruise{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.cruise_bg{
+    width: 100%;
+    height: 100%;
+}
+.cruise_bg img{
+    width: 100%;
+    height: 100%;
+}
+
+.layer_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.layer1{
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.layer2{
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+}
+.layer3{
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+}
+.layer4{
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+}
+
+.layer_box a{
+    width: 25%;
+}
+.layer{
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+.layer:hover{
+    opacity: 0;
+    transition: all 0.3s;
+}
+.layer1:hover{
+    opacity: 0.7;
+}
+
+
+
+
+.cruise_1{
+    position: absolute;
+    width: 25%;
+    box-sizing: border-box;
+    text-align: right;
+    color: white;
+    padding: 0 44px;
+    transition: transform 0.3s ease;
+    vertical-align: bottom;
+    bottom: 20%;
+    left: 0;
+}
+.cruise_1 h1{
+    font-family: 'yg-jalnan';
+    font-size: 55px;
+}
+.cruise_1 h2{
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.cruise_more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    margin-right: -297px;
+}
+.cruise_more img{
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+.cruise_1 p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cruise_content{
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    width: 25%;
+    left: 25%;
+    color: white;
+    transition: all 0.3s ease;
+}
+.cruise_content h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+.cruise_content h2{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+
+.ship2{
+    left: 50%;
+}
+.ship3{
+    left: 75%;
+}
+
+
+
+.wrap_1{
+    width: 25%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.layer_box>a{
+    border-right: solid #ffffff5e 1px;
+}
+.wrap_2{
+    width: 25%;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    height: 100%;
+}
+.wrap_3{
+    width: 25%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+}
+.wrap_4{
+    width: 25%;
+    position: absolute;
+    top: 0;
+    left: 75%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+/* 할인 및 혜택 */
+#discount{
+    width: 1320px;
+    margin: 0 auto;
+}
+#discount h1{
+    text-align: center;
+    margin-bottom: 20px;
+    transform: translateY(20px);
+}
+.dis_box{
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.dis_card{
+    width: 560px;
+    border: solid #00000045 1px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.dis_text{
+    padding-top: 5px;
+}
+.dis_text h2{
+    font-size: 18px;
+    font-weight: 300;
+}
+.dis_text h3{
+    font-size: 22px;
+    font-weight: 700;
+}
+.dis_text h4{
+    font-size: 19px;
+    font-weight: 300;
+}
+.dis_box a{
+    margin: 10px 20px;
+}
+
+.real{
+    margin-top: 10px;
+}
+
+
+
+
+
+/* wave */
+.ocean {
+    height: 45%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background: #015871;
+}
+
+.wave {
+    background: url(https://cdn.kcak11.com/codepen_assets/wave_animation/wave.svg) repeat-x;
+    position: absolute;
+    top: -192px;
+    width: 6400px;
+    z-index: 99;
+    height: 198px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+    top: -170px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+@keyframes swell {
+  0%,
+	100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+.endWave{
+	display:none;
+}
+.f_cover{
+    position: relative;
+    overflow: hidden;
+    height: 462px;
+}
+.f_text{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    color: white;
+}
+.f_text ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 50px;
+}
+.f_text ul li a{
+    color: white;
+}
+.f_text ul li a:hover{
+    color:#2291f2;
+}
+.f_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.f_box h1{
+    margin-right: 25px;
+}
+.f_box p{
+    font-weight: 100;
+}

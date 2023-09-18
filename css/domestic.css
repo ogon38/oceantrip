@@ -1,0 +1,687 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul, ol{
+    list-style: none;
+}
+img, video, iframe{
+    vertical-align: middle;
+}
+body{
+    font-family: 'SUITE Variable', sans-serif;
+    font-size: 15px;
+    min-width: 1625px;
+}
+
+#main{
+    position: relative;
+}
+#main>img{width: 100%;}
+
+
+
+.top{
+    display: inline-block; 
+    background: url(../images/oversea/up-arrow.png) no-repeat center;
+    background-size: contain;
+    color: #fff;
+    position: fixed;
+    bottom: 31px;
+    right: 47px;
+    width: 96px;
+    height: 70px;
+    z-index: 999;
+}
+/* gnb */
+#gnb{
+    width: 100%;
+    position: absolute;
+    top: 2.5%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid white 2px;
+    padding: 20px 0;
+}
+.gnb_inner{
+    width: 1920px;
+    margin: 0 auto;
+}
+#gnb ul{
+    display: flex;
+}
+#gnb ul li{
+    margin: 0 45px;
+}
+#gnb ul li a{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+#gnb ul li a:hover{
+    color: #2291f2;
+}
+
+#gnb h1{
+    position: absolute;
+    left: 4%;
+    top: 19%;
+}
+
+
+/* icons */
+.icons{
+    position: absolute;
+    right: 4%;
+    top: 30.5%;
+}
+.icons a{
+    width: 34px;
+    height: 35px;
+    display: inline-block;
+    margin: 0 15px;
+    background-repeat: no-repeat;
+}
+.heart{
+    background-image: url(../images/oversea/heart.png);
+}
+.heart:hover{
+    background-image: url(../images/oversea/hover_heart.png);
+}
+
+.login{
+    background-image: url(../images/oversea/enter.png);
+}
+.login:hover{
+    background-image: url(../images/oversea/hover_enter.png);
+}
+
+.home{
+    background-image: url(../images/oversea/home.png);
+}
+.home:hover{
+    background-image: url(../images/oversea/hover_home.png);
+}
+
+
+/* reservation form */
+
+.form{
+    position: absolute;
+    bottom: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    border: solid #2291f2 5px;
+    border-radius: 100px;
+    width: 1440px;
+}
+
+
+.elem-group{
+    margin: 20px 50px;
+}
+
+  
+  div.elem-group.inlined {
+    width: 132px;
+    display: inline-block;
+    float: left; 
+  }
+  
+  label {
+    display: block;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 300;
+  }
+  .season_tab label{
+    padding-bottom: 0;
+  }
+  
+  input, select, textarea {
+    border-radius: 2px;
+    border: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'SUITE Variable', sans-serif;
+    width: 100%;
+  }
+  
+  div.elem-group.inlined input {
+    width: 160px;
+    display: inline-block;
+    background-color: transparent;
+  }
+  
+  textarea {
+    height: 250px;
+  }
+  
+  hr {
+    border: 1px dotted #ccc;
+  }
+  
+  button {
+    height: 50px;
+    background: transparent;
+    border: solid #2291f2 3px;
+    color: #2291f2;
+    font-size: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 200px;
+  }
+  
+  button:hover {
+    background-color: #2291f2;
+    color: white;
+  }
+
+  .numm{
+    width: 60px !important;
+  }
+  .numm input{
+    width: 70px!important;
+  }
+
+  .form button{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+  }
+
+  .last_num{
+    margin-right: 235px !important;
+  }
+
+
+
+
+  /* 슬라이드 */
+
+
+    .swiper {
+      width: 1230px;
+      padding: 0 70px !important;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .banner{
+        margin-top: 200px;
+    }
+
+    :root {
+        --swiper-theme-color: #2291f2 !important;
+    }
+
+
+
+
+    /* 아이콘들 */
+    #icons{
+        width: 1230px;
+        margin: 60px auto;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .quick_time{
+        margin-right: 13px;
+    }
+    #icons h2{
+        margin-top: 10px;
+    }
+    .icon_card{
+        width: 160px;
+    }
+
+
+
+
+    @font-face {
+        font-family: 'yg-jalnan';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+h5{
+    font-family: 'yg-jalnan';
+    width: 1320px;
+    margin: 170px auto 50px;
+    font-size: 30px;
+    color: #056cf2;
+}
+
+/* 소제목 */
+h5{
+    font-family: 'yg-jalnan';
+    width: 1320px;
+    margin: 170px auto 50px;
+    font-size: 30px;
+    color: #056cf2;
+}
+
+/* 타임딜 배너 */
+.time_banner{
+    width: 100%;
+}
+.time_banner img{
+    width: 100%;
+}
+
+
+/* 타임딜 time deal */
+.time_deal{
+    width: 1442px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.time_card{
+    position: relative;
+}
+
+.time_text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.time_textin{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.time_textin .clock{
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    padding-top: 5px;
+    padding-right: 16px;
+}
+.clock img{
+    padding-right: 10px;
+}
+.clock h2{
+    color: white;
+    font-size: 20px;
+    padding-right: 10px;
+}
+.time_textin h3{
+    margin-top: 50px;
+    margin-left: 23px;
+}
+.time_textin h4{
+    font-weight: 400;
+    margin-left: 23px;
+}
+.price_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.time_textin p{
+    margin-right: 21px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+
+
+/* 더보기 */
+.more h1{
+    display: block;
+    font-size: 20px;
+}
+.more {
+    display: flex;
+    border: solid 3px #056cf2;
+    border-radius: 40px;
+    width: fit-content;
+    margin: 50px auto;
+    padding: 5px 30px;
+}
+
+.more img{
+    height: 100%;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.more:hover{
+    background-color: #056cf2;
+    color: white;
+}
+.hover_arrow{
+    display: none;
+}
+.more:hover .more_arrow{
+    display: none;
+}
+.more:hover .hover_arrow{
+    display: inline-block;
+}
+
+
+
+
+
+
+.season_tabs {
+    position: relative;   
+    min-height: 360px; 
+    clear: both;
+    /* margin: 25px 0; */
+  }
+  .season_tab {
+    float: left;
+    clear: both;
+    width: 286px;
+    margin-bottom: 30px;
+  }
+  .season_tab label {
+    border-top: 3px solid #2291f2;
+    border-bottom: 3px solid #2291f2;
+    border-radius: 0 40px 40px 0;
+    font-size: 30px;
+    font-weight: 500;
+    vertical-align: middle;
+    position: relative;
+    width: 307px;
+    height: 104.5px;
+    display: table-cell;
+    cursor: pointer;
+    text-align: center;
+  }
+  .season_tab [type=radio] {
+    display: none;   
+  }
+  .season_content {
+    position: absolute;
+    top: 0;
+    left: 286px;
+    background: white;
+    right: 0;
+    bottom: 0;
+    /* border: 1px solid #ccc;*/
+   }
+  .season_content span {
+    animation: 0.5s ease-out 0s 1 slideInFromTop; 
+  }
+  [type=radio]:checked ~ label {
+    background: white;
+    background-color: #2291f2;
+    color: white;
+    z-index: 2;
+  }
+  [type=radio]:checked ~ label ~ .season_content {
+    z-index: 1;
+  }
+
+
+  /* hotel 호텔 */
+  .hotel_content{
+    display: flex;
+    justify-content: space-around;
+    background: url(../images/domestic/hotel_bg.png) no-repeat 0 0;
+    background-size: 100%;
+    height: 690px;
+  }
+  .hotel_content a{
+    height: fit-content;
+  }
+  .hotel_card{
+    width: 370px;
+    height: 515px;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    margin-top: 100px;
+  }
+  .star{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+  }
+  .star img{
+    width: 28px;
+    margin-right: 10px;
+  }
+  .hotel_text{
+    background-color: rgba(0, 0, 0, 0.623);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    width: 99.5%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .hotel_text h1{
+    text-align: right;
+  }
+  .hotel_text h2{
+    font-weight: 300;
+  }
+  .hotel_text h2 span{
+    font-weight: 800;
+  }
+  .hotel_text h3{
+    margin: 5px 0;
+  }
+  .hotel_text h4{
+    font-weight: 300;
+  }
+  .first_tab{
+    margin-top: 41px;
+  }
+
+
+
+  .middle_card{
+    margin-top: 0;
+  }
+.middle_card .hotel_text{
+    top: 0;
+    left: 0;
+    bottom: unset;
+}
+
+/* card_hover */
+.hotel_card:hover{
+    transform: translateY(-50px);
+    transition: all 0.5s;
+}
+.middle_card:hover{
+    transform: translateY(50px);
+    transition: all 0.5s;
+}
+
+.aaa{
+  margin-top: 330px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+/* 할인 및 혜택 */
+
+#discount>img{
+  width: 100%;
+}
+
+.dis_box{
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 149px;
+}
+.dis_card{
+  width: 230px;
+  padding: 154px 10px 30px;
+  background-color: #2291f2;
+  color: white;
+  text-align: center;
+  position: relative;
+  border-radius: 20px;
+}
+.card_head{
+  position: absolute;
+  top: -34%;
+  left: 0;
+  width: 250px;
+  height: 256px;
+  border-radius: 208px;
+  border: #2291f2 solid 1px;
+  padding: 60px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.dis_card h1{
+  font-size: 36px;
+}
+.dis_card h2{
+  background-color: #22436e;
+  border-radius: 34px;
+  font-weight: 300;
+  padding: 4px 0;
+  margin: 3px 0;
+}
+.dis_card p{
+  margin-top: 11px;
+    font-size: 20px;
+}
+
+.more_padding{
+  padding: 72px;
+}
+
+
+
+/* wave */
+.ocean {
+    height: 45%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background: #015871;
+}
+
+.wave {
+    background: url(https://cdn.kcak11.com/codepen_assets/wave_animation/wave.svg) repeat-x;
+    position: absolute;
+    top: -192px;
+    width: 6400px;
+    z-index: 99;
+    height: 198px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+    top: -170px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+@keyframes swell {
+  0%,
+	100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+.endWave{
+	display:none;
+}
+.f_cover{
+    position: relative;
+    overflow: hidden;
+    height: 462px;
+
+}
+.f_text{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    color: white;
+}
+.f_text ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 50px;
+}
+.f_text ul li a{
+    color: white;
+}
+.f_text ul li a:hover{
+    color:#2291f2;
+}
+.f_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.f_box h1{
+    margin-right: 25px;
+}
+.f_box p{
+    font-weight: 100;
+}

@@ -1,0 +1,163 @@
+@charset "uft-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul, ol{
+    list-style: none;
+}
+img, video, iframe{
+    vertical-align: middle;
+}
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'SUITE Variable', sans-serif;
+    color: white;
+    min-width: 1650px;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+.left{
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+    box-sizing: border-box;
+}
+
+
+
+
+#main>img{
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+}
+.clock{
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    font-family: 'yg-jalnan';
+}
+.clock span{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#72b6f2+0,2291f2+50,056cf2+99 */
+background: #72b6f2; /* Old browsers */
+background: -moz-linear-gradient(top,  #72b6f2 0%, #2291f2 50%, #056cf2 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #72b6f2 0%,#2291f2 50%,#056cf2 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #72b6f2 0%,#2291f2 50%,#056cf2 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72b6f2', endColorstr='#056cf2',GradientType=0 ); /* IE6-9 */
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+
+-webkit-text-stroke-width: 5px;
+-webkit-text-stroke-color: white;
+
+
+}
+
+
+
+
+
+
+.oversea{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/oversea_left.jpg);
+    position: relative;     
+       transition: all 0.5s; 
+
+}
+.domestic{
+    background-image: url(../images/domestic_right.jpg);
+}
+.left:hover .black_box{
+    border: solid white 10px;
+    transition: all 0.5s;
+}
+.left:hover .oversea{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.left:hover .black_box{
+    opacity: 0.5;
+    transition: all 0.5s;
+    border: solid rgba(255, 255, 255, 0) 10px;
+}
+.left:hover .text h1{
+    color: #72b6f2;
+    transition: all 0.5s;
+}
+.left:hover .text{
+    top: 20%;
+    transition: all 0.5s;
+}
+
+.wrap{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.black_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+       transition: all 0.5s;
+}
+
+.text{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+       transition: all 0.5s;
+}
+.text_right{
+    right: 20%;
+    left: inherit;
+    text-align: right;
+}
+
+.text h1{
+    font-family: 'yg-jalnan';
+   font-size: 100px;
+   transition: all 0.5s;
+}
+
+.text h2{
+    font-weight: 800;
+    font-size: 30px;
+    color: #72b6f2;
+    margin: 33px 0;
+}
+.text p{
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 50px;
+}
