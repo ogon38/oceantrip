@@ -84,10 +84,12 @@ color: transparent;
     background-image: url(../images/oversea_left.jpg);
     position: relative;     
        transition: all 0.5s; 
+       background-size: cover;
 
 }
 .domestic{
     background-image: url(../images/domestic_right.jpg);
+    background-size: cover;
 }
 .left:hover .black_box{
     border: solid white 10px;
