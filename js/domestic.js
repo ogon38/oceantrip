@@ -37,6 +37,7 @@ $(function() {
     
     updateDiffTime();
     setInterval(updateDiffTime, 1000);
+
         
         
     

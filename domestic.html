@@ -9,6 +9,7 @@
       <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="shortcut icon" href="./images/Asset 9.ico" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -44,6 +45,7 @@
                     <option value="adjoining">경기도/인천</option>
                     <option value="adjacent">충남/전라도</option>
                     <option value="adjacent">경북/경남/부산</option>
+                    <option value="adjacent">제주도</option>
                 </select>
             </div>
 
@@ -75,9 +77,9 @@
 <!-- Swiper -->
 <div class="swiper mySwiper banner">
     <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="./images/oversea/banner_sypan.jpg" alt="사이판배너"></div>
-        <div class="swiper-slide"><img src="./images/oversea/banner_pack.jpg" alt="패키지배너"></div>
-        <div class="swiper-slide"><img src="./images/oversea/banner_earlybird.jpg" alt="얼리버드배너"></div>
+        <div class="swiper-slide"><a href="#"><img src="./images/domestic/domestic_main_banner1.jpg" alt="배너1"></a></div>
+        <div class="swiper-slide"><a href="#"><img src="./images/domestic/domestic_main_banner2.jpg" alt="배너2"></a></div>
+        <div class="swiper-slide"><a href="#"><img src="./images/domestic/domestic_main_banner3.jpg" alt="배너3"></a></div>
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
@@ -145,7 +147,7 @@
                 <h3>제주도 - 함덕 해수욕장</h3>
                 <div class="price_box">
                     <h4>#한국의 몰디브 #가족여행</h4>
-                    <p>145,000원</p>
+                    <p>329,000원</p>
                 </div>
             </div>
             
@@ -172,7 +174,7 @@
                 <h3>거제 - 학동 흑진주 몽돌 해변</h3>
                 <div class="price_box">
                     <h4>#까만 돌과 바다 #사진명소</h4>
-                    <p>121,000원</p>
+                    <p>212,000원</p>
                 </div>
             </div>
             
@@ -199,7 +201,7 @@
                 <h3>강릉 - 사천해변</h3>
                 <div class="price_box">
                     <h4>#고요한 바다 #노을 #힐링</h4>
-                    <p>102,000원</p>
+                    <p>258,000원</p>
                 </div>
             </div>
             
@@ -222,7 +224,7 @@
 </a> 
 
 
-<h5 id="deal">국내 호텔 추천</h5>
+<h5 id="hotel">국내 호텔 추천</h5>
 
 <div class="season_tabs">
     
@@ -317,7 +319,7 @@
 
                     <a href="#">
                         <div class="hotel_card  middle_card">
-                            <img src="images/domestic/hotel2.png" alt="hotel1">
+                            <img src="images/domestic/hotel4.png" alt="hotel1">
     
                             <div class="hotel_text">
                                 <div class="star">
@@ -429,7 +431,7 @@
                 <div class="hotel_content">
                     <a href="#">
                     <div class="hotel_card">
-                        <img src="images/domestic/hotel1.png" alt="hotel1">
+                        <img src="images/domestic/hotel3.png" alt="hotel1">
 
                         <div class="hotel_text">
                             <div class="star">
@@ -446,7 +448,7 @@
 
                     <a href="#">
                         <div class="hotel_card  middle_card">
-                            <img src="images/domestic/hotel2.png" alt="hotel1">
+                            <img src="images/domestic/hotel4.png" alt="hotel1">
     
                             <div class="hotel_text">
                                 <div class="star">
@@ -463,7 +465,7 @@
 
                         <a href="#">
                             <div class="hotel_card">
-                                <img src="images/domestic/hotel3.png" alt="hotel1">
+                                <img src="images/domestic/hotel1.png" alt="hotel1">
         
                                 <div class="hotel_text">
                                     <div class="star">
@@ -708,9 +710,23 @@ document.addEventListener('DOMContentLoaded', function () {
     const initialTab = document.querySelector('#tab-1');
     initialTab.click(); // 첫 번째 탭을 클릭하여 초기 활성화 상태로 설정
 });
+</script>
 
-
-
+<script>
+      $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+      $('html, body').animate({
+      scrollTop: target.offset().top
+      }, 500);//움직이는 시간 조정
+      return false;
+      }
+      }
+      });
+      });
 </script>
         
 <script src="./js/domestic.js"></script>
