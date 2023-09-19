@@ -210,9 +210,9 @@ body{
   /* 슬라이드 */
 
 
+
     .swiper {
       width: 1230px;
-      padding: 0 70px !important;
       height: 100%;
     }
 
@@ -331,9 +331,10 @@ h5{
             color: white !important;
             cursor: pointer;
 		}
-		html ul.tabs li.active, html ul.tabs li.active a:hover  {
+		html ul.tabs li.active span, html ul.tabs li.active a:hover  {
 			 /*--Makes sure that the active tab does not listen to the hover properties--*/
 			background: #2291f2;
+            color: white;
 			/*--Makes the active tab look like it's connected with its content--*/
 		}
 
@@ -350,7 +351,7 @@ h5{
 
 
         .tab{
-            background-color: white !important;
+            background-color: white;
         }
         .active a{
             background-color: #2291f2 !important;
@@ -971,3 +972,12 @@ h5{
 .f_box p{
     font-weight: 100;
 }
+
+
+#arrow_relativ{width:1500px; margin:0 auto;
+    position:relative; margin-top: 69px;}
+    .card4_out{width:1320px; margin:0 auto;}
+    .card4_out_next{right:0;}
+    .card4_out_prev{left:0;}
+    .card4_out_next:after, .card4_out_prev:after{
+    font-size: 18px; font-weight:bold;}

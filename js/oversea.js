@@ -9,8 +9,8 @@
       clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".card4_out_next",
+      prevEl: ".card4_out_prev",
     },
   });
 

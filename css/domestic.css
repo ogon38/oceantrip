@@ -16,7 +16,7 @@ img, video, iframe{
 body{
     font-family: 'SUITE Variable', sans-serif;
     font-size: 15px;
-    min-width: 1625px;
+    min-width: 1600px;
 }
 
 #main{
@@ -215,7 +215,6 @@ body{
 
     .swiper {
       width: 1230px;
-      padding: 0 70px !important;
       height: 100%;
     }
 
@@ -685,3 +684,12 @@ h5{
 .f_box p{
     font-weight: 100;
 }
+
+
+#arrow_relativ{width:1500px; margin:0 auto;
+  position:relative; margin-top: 200px;}
+  .card4_out{width:1320px; margin:0 auto;}
+  .card4_out_next{right:0;}
+  .card4_out_prev{left:0;}
+  .card4_out_next:after, .card4_out_prev:after{
+  font-size: 18px; font-weight:bold;}
