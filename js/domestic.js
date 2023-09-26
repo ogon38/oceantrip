@@ -19,7 +19,7 @@ $(function() {
     function updateDiffTime() {
         remainTimes.forEach((remainTime, index) => {
             // 여기에서 각 요소에 대한 서로 다른 시간을 계산하고 설정합니다.
-            const masTimes = ["2023-09-20", "2023-09-23", "2023-09-25"]; // 각 요소에 대한 날짜를 배열로 설정
+            const masTimes = ["2023-09-29", "2023-09-31", "2023-10-3"]; // 각 요소에 대한 날짜를 배열로 설정
     
             const masTime = new Date(masTimes[index]); // 각 요소에 대한 날짜 설정
             const todayTime = new Date();
